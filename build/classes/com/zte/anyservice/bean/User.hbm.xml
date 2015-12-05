@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+      <class name="com.zte.anyservice.bean.User">
+        <id name="userid" column="userid">
+          <generator class="increment"></generator>
+        </id>
+         <property name="username" column="username"></property>
+          <property name="password" column="password"></property>
+          <property name="age" column="age"></property>
+          <property name="email" column="email"></property>
+      </class>
+    </hibernate-mapping>
